@@ -19,7 +19,11 @@ export default function SteperLine(props) {
                   <div className="icon-design">
                     <div
                       className={`icon-design-active ${
-                        tabview === "first" || tabview == "second" ? "now" : ""
+                        tabview === "first" ||
+                        tabview == "second" ||
+                        tabview === "third"
+                          ? "now"
+                          : ""
                       }`}></div>
                   </div>
                 ) : (
@@ -43,13 +47,11 @@ export default function SteperLine(props) {
                 {/* <div className="icon-design">
                             </div>    */}
 
-                {tabview === "third" ||
-                tabview === "forth" ||
-                tabview === "fifth" ? (
+                {tabview === "forth" || tabview === "fifth" ? (
                   <div className="icon-design">
                     <div
                       className={`icon-design-active ${
-                        tabview === "third" || tabview == "forth" ? "now" : ""
+                        tabview == "forth" ? "now" : ""
                       }`}></div>
                   </div>
                 ) : (
@@ -57,9 +59,7 @@ export default function SteperLine(props) {
                 )}
               </div>
 
-              {tabview === "third" ||
-              tabview === "forth" ||
-              tabview === "fifth" ? (
+              {tabview === "forth" || tabview === "fifth" ? (
                 <p style={{ color: "#9DBC78", fontWeigth: "bold" }}>Kontakt</p>
               ) : (
                 <p>Kontakt</p>
