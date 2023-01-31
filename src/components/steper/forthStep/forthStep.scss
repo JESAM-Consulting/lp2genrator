@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+   @include breakpoint('max-sm'){
+    margin-bottom: 20px;
+   }
   .forth-box {
     width: 451px;
 

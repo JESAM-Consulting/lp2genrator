@@ -9,6 +9,10 @@ import IconDesign4 from "../../../assets/icons/00004.svg";
 import IconDesign6 from "../../../assets/icons/00005.svg";
 
 export default function VielenDank() {
+  const handleClick = () => {
+    // navigation("https://www.fe-finance.de/");
+  };
+
   return (
     <div>
       <div className="vielenDank-center-alignment">
@@ -22,10 +26,12 @@ export default function VielenDank() {
               Deinem bevorzugtem Kontaktweg mitteilen.
             </p>
             <div className="button-center-alignment">
-              <button>
-                mehr zu FE Finance erfahren
-                <img src={WhiteArrow} alt="WhiteArrow" />
-              </button>
+              <a href="https://www.fe-finance.de/">
+                <button onClick={handleClick}>
+                  mehr zu FE Finance erfahren
+                  <img src={WhiteArrow} alt="WhiteArrow" />
+                </button>
+              </a>
             </div>
           </div>
         </div>

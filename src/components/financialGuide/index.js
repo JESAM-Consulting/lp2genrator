@@ -73,12 +73,12 @@ export default function FinancialGuide(props) {
                     <p>Deine Karriere als Financial Guide starten</p>
                     {/* onClick={() => setModalOpen(true)} */}
                     <NavLink to="/steper">
-                    <div
-                      className="arrow-text-center-alignment"
-                      >
-                      <img src={RightIcon} alt="RightIcon" />
-                      <span>Jetzt bewerben! (ohne Lebenslauf in 30 Sek.)</span>
-                    </div>
+                      <div className="arrow-text-center-alignment">
+                        <img src={RightIcon} alt="RightIcon" />
+                        <span>
+                          Jetzt bewerben! (ohne Lebenslauf in 30 Sek.)
+                        </span>
+                      </div>
                     </NavLink>
                     <div className="mobile-xml-logo">
                       <img src={XmlLogo} alt="XmlLogo" />
@@ -192,11 +192,13 @@ export default function FinancialGuide(props) {
               <div>
                 <img src={LgMobile} alt="LgMobile" />
               </div>
-              <div>
-                <p>
-                  Jetzt bewerben! <span>(ohne Lebenslauf in 30 Sek.)</span>
-                </p>
-              </div>
+              <NavLink to="/steper">
+                <div>
+                  <p>
+                    Jetzt bewerben! <span>(ohne Lebenslauf in 30 Sek.)</span>
+                  </p>
+                </div>
+              </NavLink>
             </div>
           </div>
           <div className="new-mobile-col-two-grid">

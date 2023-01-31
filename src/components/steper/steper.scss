@@ -20,6 +20,7 @@
       gap: 16px;
     }
     img{
+      width: 4rem;
       @include breakpoint("max-sm") {
         width: 3.5rem;
       }
@@ -68,4 +69,8 @@
 .main-child-content-steper-page-alignment {
   min-height: calc(100vh - 155px);
   overflow: auto;
+
+  @include breakpoint("max-sm") {
+    min-height: auto;
+  }
 }
