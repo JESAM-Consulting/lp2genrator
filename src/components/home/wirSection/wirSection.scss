@@ -1,0 +1,149 @@
+@import '../../../styles/mixins/global.scss';
+
+.wir-section-content-alignment {
+    background: rgba(91, 91, 91, 0.19);
+    padding: 90px 0 60px 0;
+
+    @include breakpoint("max-md") {
+        padding: 70px 0;
+    }
+
+    @include breakpoint("max-sm") {
+        padding: 60px 0;
+    }
+
+    .container-md-8 {
+        @include breakpoint("max-sm") {
+            padding: 0;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 405px 1fr;
+        gap: 67px;
+
+        @include breakpoint("max-md") {
+            grid-template-columns: 230px 1fr;
+            gap: 30px;
+        }
+
+        @include breakpoint("max-sm") {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .grid-items:last-child {
+            @include breakpoint("max-sm") {
+                padding: 0 30px;
+            }
+        }
+
+        .grid-items {
+            .button-right-alignment {
+                display: flex;
+                align-items: center;
+                padding: 30px 0 0 0;
+                justify-content: flex-end;
+
+                @include breakpoint("max-md") {
+                    justify-content: flex-start;
+                }
+
+                button {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #fff;
+                    background: #9DBC78;
+                    padding: 22px 37px;
+                    border: none;
+                    cursor: pointer;
+
+                    @include breakpoint("max-md") {
+                        padding: 15px 20px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            .faq-image-style {
+                @include breakpoint("max-sm") {}
+
+                img:first-child {
+                    @include breakpoint("max-sm") {
+                        display: none;
+                    }
+                }
+
+                img:last-child {
+                    display: none;
+
+                    @include breakpoint("max-sm") {
+                        display: block;
+                        width: 100%;
+                        object-fit: cover;
+                        height: 190px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 228px;
+                    object-fit: cover;
+
+                    @include breakpoint("max-sm") {
+                        height: 131px;
+                        object-fit: contain;
+
+                    }
+                }
+            }
+
+            .top-align {
+                margin-top: 20px;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 16px;
+                color: #2E2E2E;
+                line-height: 22px;
+
+                @include breakpoint("max-md") {
+                    font-weight: 600;
+                    font-size: 11px;
+                    line-height: 22px;
+                }
+
+                @include breakpoint("max-sm") {
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 22px;
+                }
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 36px;
+                margin: 0 0 10px 0;
+                color: #2E2E2E;
+                line-height: 60px;
+
+                @include breakpoint("max-md") {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 60px;
+                }
+
+                @include breakpoint("max-sm") {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}

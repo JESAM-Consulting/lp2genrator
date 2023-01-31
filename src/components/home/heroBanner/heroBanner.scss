@@ -1,0 +1,92 @@
+@import '../../../styles/mixins/global.scss';
+
+.hero-banner {
+    background-image: url("../../../assets/images/hero-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(620px - 114px);
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background-position: center center;
+
+    @include breakpoint("max-sm") {
+        height: 323px;
+    }
+
+    .mobile-icon-bottom-alignment {
+        display: none;
+
+        @include breakpoint("max-md") {
+            display: block;
+            position: absolute;
+            top: 23px;
+            right: 30px;  
+        }
+
+        span {
+            font-size: 8px;
+            line-height: 12px;
+            color: #fff;
+            font-family: "VisbyCF-Regular";
+            display: block;
+            text-align: right;
+            padding: 0 0 5px 0;
+        }
+
+      
+        img {
+            max-width: 110px;
+        }
+    }
+
+    .relative {
+        position: relative;
+    }
+
+    .icon-bottom-alignment {
+        position: absolute;
+        right: 0;
+        bottom: 40px;
+        cursor: pointer;
+
+        @include breakpoint("max-md") {
+            bottom: 46px;
+        }
+
+        @include breakpoint("max-sm") {
+            display: none;
+        }
+    }
+
+    .text-style {
+        padding: 0 0 100px 0;
+
+        @include breakpoint("max-md") {
+            padding: 0 0 77px 0;
+        }
+
+
+        h1 {
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 60px;
+            color: #fff;
+
+            @include breakpoint("max-md") {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            @include breakpoint("max-sm") {
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}

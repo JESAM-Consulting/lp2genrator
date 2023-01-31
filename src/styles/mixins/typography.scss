@@ -1,0 +1,17 @@
+@use '../mixins/breakpoint.scss';
+
+// font-family: 'Montserrat', sans-serif;
+
+@font-face {
+    font-family: "VisbyCF-Medium";
+    src: url("../../assets/font/VisbyCF-Medium.otf");
+}
+
+@font-face {
+    font-family: "VisbyCF-Regular";
+    src: url("../../assets/font/VisbyCF-Regular.otf");
+}
+@font-face {
+    font-family: "VisbyCF-LightOblique";
+    src: url("../../assets/font/VisbyCF-LightOblique.otf");
+}

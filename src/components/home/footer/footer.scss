@@ -1,0 +1,416 @@
+@import '../../../styles/mixins/global.scss';
+
+.footer-first {
+    margin: 80px 0 0 0;
+    background: #9DBC78;
+    padding: 145px 0 91px 0;
+
+    @include breakpoint("max-md") {
+        margin: 40px 0 0 0;
+        padding: 79px 0 65px 0;
+    }
+
+    @include breakpoint("max-sm") {
+        margin: 60px 0 0 0;
+        padding: 47px 0;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        color: #fff;
+        text-align: center;
+
+        @include breakpoint("max-md") {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 49px;
+        }
+
+        @include breakpoint("max-sm") {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 49px;
+        color: #fff;
+        text-align: center;
+
+        @include breakpoint("max-md") {
+            font-size: 24px;
+            line-height: 49px;
+        }
+
+        @include breakpoint("max-sm") {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    .button-center-alignment {
+        display: flex;
+        align-items: center;
+        padding: 60px 0 0 0;
+        justify-content: center;
+
+        @include breakpoint("max-md") {
+            padding: 40px 0 0 0;
+        }
+
+        @include breakpoint("max-sm") {
+            padding: 30px 0 0 0;
+        }
+
+        button {
+            padding: 14px 30px;
+            background: #FFFFFF;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: #333333;
+            border: none;
+
+            @include breakpoint("max-md") {
+                padding: 15px 20px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            @include breakpoint("max-sm") {
+                font-weight: 700;
+                font-size: 12px;
+                padding: 10px;
+                line-height: 22px;
+                padding: 10px 21px;
+            }
+        }
+    }
+}
+
+
+
+.footer-design {
+    padding: 100px 0 47px 0;
+
+    @include breakpoint("max-md") {
+        padding: 70px 0 27px 0;
+    }
+
+    @include breakpoint("max-md") {
+        padding: 83px 0 109px 0;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 43px;
+
+        @include breakpoint("max-md") {
+            gap: 30px;
+            grid-template-columns: 140px 1fr;
+        }
+
+        @include breakpoint("max-sm") {
+            gap: 0;
+            grid-template-columns: 1fr;
+        }
+
+        .icon-alignment {
+            display: flex;
+            align-items: center;
+            padding: 18px 0 0 0;
+
+            div {
+                padding-right: 23px;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+
+            div:last-child {
+                padding: 0;
+            }
+        }
+
+        .footer-grid-items:nth-child(1) {
+            border-right: 1px solid #333333;
+        }
+
+        .footer-grid-items {
+            .logo-center-alignment {
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+
+                @include breakpoint("max-sm") {
+                    display: none;
+                }
+            }
+
+            .sub-content-alignment {
+                display: flex;
+                justify-content: space-between;
+
+                @include breakpoint("max-sm") {
+                    display: block;
+                }
+            }
+
+            .all-icon-text-alignment {
+                .icon-text-alignment:last-child {
+                    padding: 0;
+                }
+            }
+
+            .three-section {
+                max-width: 295px;
+
+                @include breakpoint("max-sm") {
+                    max-width: 100%;
+                    padding-left: 31px;
+                }
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #333333;
+                    line-height: 25px;
+                    font-family: "VisbyCF-Medium";
+                    margin: 0 0 20px 0;
+
+                    @include breakpoint("max-md") {
+                        font-size: 13px;
+                    }
+
+                }
+            }
+
+            .footer-last-child-text-alignmetn {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        width: 196px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #333333;
+                        font-family: "VisbyCF-Medium";
+
+                        @include breakpoint("max-sm") {
+                            position: relative;
+                            top: 2px;
+
+                        }
+
+                    }
+                }
+            }
+
+            .icon-text-alignment {
+                display: flex;
+                padding: 0 0 14px 0;
+                align-items: center;
+
+                @include breakpoint("max-sm") {
+                    padding: 0 0 10px 0;
+                }
+
+                div {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        @include breakpoint("max-sm") {
+                            max-width: 10px;
+                        }
+                    }
+                }
+
+                a {
+                    font-weight: 700;
+                    font-size: 14px;
+                    font-family: 'Inter', sans-serif;
+                    cursor: pointer;
+                    color: #333333;
+                    line-height: 15px;
+                    display: block;
+                    padding-left: 11px;
+
+                    @include breakpoint("max-sm") {
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            .sec-section {
+                @include breakpoint("max-sm") {
+                    padding-left: 31px;
+                    padding-bottom: 52px;
+                }
+
+                h2 {
+                    font-weight: 700;
+                    color: #333333;
+                    font-family: "VisbyCF-Medium";
+                    font-size: 20px;
+
+                    line-height: 15px;
+                    margin: 0 0 10px 0;
+
+                    @include breakpoint("max-md") {
+                        font-size: 15px;
+                    }
+                }
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 15px;
+                    margin: 0 0 23px 0;
+                    font-family: "VisbyCF-Medium";
+                    color: #9DBC78;
+
+                    @include breakpoint("max-sm") {
+                        font-size: 13px;
+                        margin: 0 0 11px 0;
+                    }
+                }
+            }
+
+
+
+            .first-section {
+                @include breakpoint("max-sm") {
+                    display: none;
+                }
+
+                p {
+                    font-weight: 500;
+                    color: #333333;
+                    font-family: "VisbyCF-Medium";
+                    cursor: pointer;
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.footer-last-chiild-sec {
+    padding: 0 0 15px 0;
+
+    @include breakpoint("max-sm") {
+        padding: 0 0 70px 0;
+    }
+
+
+    p {
+        font-weight: 700;
+        color: #1F1D21;
+        font-family: "VisbyCF-Medium";
+        cursor: pointer;
+        text-align: center;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .footer-link-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint("max-sm") {
+            padding: 0 0 10px 0;
+        }
+
+        a:nth-child(2) {
+            padding: 0 5px;
+        }
+
+        a {
+            display: block;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+            font-family: "VisbyCF-Medium";
+            color: #1F1D21;
+            cursor: pointer;
+        }
+    }
+}
+
+.mobile-footer-show {
+    display: none;
+
+    @include breakpoint("max-sm") {
+        display: block;
+    }
+
+    .mobile-footer-center-alignment {
+        display: flex;
+        margin: 0 0 50px 0;
+
+        .icon-alignment {
+            display: flex;
+            align-items: center;
+            padding: 10px 0 0 0;
+
+            div {
+                padding-right: 23px;
+            }
+
+            div:last-child {
+                padding: 0;
+            }
+
+
+        }
+
+        .footer-logo-mobile {
+            border-right: 1px solid #333333;
+            padding-right: 0px;
+        }
+
+        .first-section-mobile {
+            padding-left: 15px;
+
+            p {
+                font-weight: 500;
+                color: #333333;
+                font-family: "VisbyCF-Medium";
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 32px;
+
+                @include breakpoint("max-sm") {
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 25px;
+                }
+            }
+
+
+        }
+    }
+}

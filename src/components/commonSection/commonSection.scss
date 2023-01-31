@@ -1,0 +1,61 @@
+@import '../../styles/mixins/global.scss';
+
+.common-section-content-all-alignment {
+    padding: 60px 0;
+
+    @include breakpoint("max-md") {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+
+
+
+        .grid-items:nth-child(1) {
+            p {
+                max-width: 193px;
+                margin: 0 auto;
+            }
+        }
+
+        .center-c {
+            display: flex;
+            justify-content: center;
+        }
+
+        .grid-items {
+
+            .icon-alignment-for-web {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 0 14px 0;
+            }
+
+            h2 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                min-height: 44px;
+                margin: 0 0 18px 0;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                color: #000000;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+
+                color: #2E2E2E;
+
+            }
+        }
+    }
+}
