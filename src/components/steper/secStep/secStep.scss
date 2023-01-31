@@ -21,11 +21,12 @@
         text-align: center;
         margin: 0 0 10px 0;
         color: #000000;
+
         @include breakpoint("max-sm") {
           font-weight: 700;
           margin: 0 0 10px 0;
-          font-size: 14px;
-          line-height: 17px;
+          font-size: 1.45rem;
+          line-height: 1.75rem;
         }
       }
       p {
@@ -38,7 +39,7 @@
         color: #000000;
         @include breakpoint("max-sm") {
           font-weight: 400;
-          font-size: 11px;
+          font-size: 1rem;
           line-height: 16px;
         }
       }
@@ -59,14 +60,14 @@
           cursor: pointer;
           padding: 18px;
           font-weight: 700;
-          font-size: 14px;
+          font-size: 1rem;
           line-height: 17px;
           background: #9dbc78;
           border-radius: 10px;
           width: 100%;
 
           @include breakpoint("max-sm") {
-            padding: 11px;
+            padding: 20px;
           }
         }
       }

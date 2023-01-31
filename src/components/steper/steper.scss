@@ -2,9 +2,15 @@
 
 .steper-all-content-alignment {
   border: 1px solid #dadada;
-  padding: 16px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #dadada;
 
+
+  .steper-container{
+    @include breakpoint('max-sm'){
+      padding: 0 20px;
+    }
+  }
   .first-content-alignment {
     display: flex;
     align-items: center;
@@ -13,17 +19,21 @@
     @include breakpoint("max-sm") {
       gap: 16px;
     }
-
+    img{
+      @include breakpoint("max-sm") {
+        width: 3rem;
+      }
+    }
     p {
       font-weight: 800;
       font-size: 16px;
-      line-height: 30px;
+      line-height: 1.5rem;
       color: #000000;
 
       @include breakpoint("max-sm") {
-        font-weight: 800;
-        font-size: 13px;
-        line-height: 30px;
+        font-weight: 700;
+        font-size: 0.90rem;
+        line-height: 1.25rem;
       }
       span {
         font-weight: 400;

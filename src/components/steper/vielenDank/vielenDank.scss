@@ -28,8 +28,8 @@
         @include breakpoint("max-sm") {
           font-weight: 700;
           margin: 0 0 10px 0;
-          font-size: 14px;
-          line-height: 17px;
+          font-size: 1.5rem;
+          line-height: 1.75rem;
         }
       }
 
@@ -54,11 +54,11 @@
           border-radius: 10px;
 
           @include breakpoint("max-sm") {
-            padding: 9px 27px;
+            padding: 18px 27px;
             font-weight: 700;
-font-size: 10px;
-line-height: 12px;
-text-align: center;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            text-align: center;
           }
 
           cursor: pointer;
@@ -77,8 +77,8 @@ text-align: center;
         color: #5d5d5d;
         @include breakpoint("max-sm") {
           font-weight: 400;
-          font-size: 10px;
-          line-height: 16px;
+          font-size: 1rem;
+          line-height: 1.25rem;
         }
       }
     }

@@ -5,7 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import { ApiGet, ApiPost, ApiPut } from "../../../helpers/API/ApiData";
 
 export default function ForthStep(props) {
-  const { stepper, setStepper,setTabview } = props;
+  const { stepper, setStepper, setTabview } = props;
   console.log(
     "====>",
     stepper.forthStepper,
@@ -17,9 +17,8 @@ export default function ForthStep(props) {
   const [errors, setErrors] = useState({});
   const [terms, setTerms] = useState(false);
   const [successMessage, setSuccessMessage] = useState(false);
-console.log("inputValue",inputValue);
-  const regexEmail =
-    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+  console.log("inputValue", inputValue);
+  const regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
   const bindInput = (value) => {
     var regex = new RegExp("^[^0-9 ]*$");
@@ -92,8 +91,10 @@ console.log("inputValue",inputValue);
       };
       ApiPost(`create-energy-steps`, data)
         .then((res) => {
-          toast.success( "Vielen Dank, Ihre Daten wurden erfolgreich eingereicht.");
-          setTabview("fifth")
+          toast.success(
+            "Vielen Dank, Ihre Daten wurden erfolgreich eingereicht."
+          );
+          setTabview("fifth");
         })
         .catch((err) => {
           toast.error("Etwas ist schief gelaufen. Bitte versuche es erneut");
@@ -108,13 +109,15 @@ console.log("inputValue",inputValue);
           <div className="text-style">
             <h4>Jetzt bewerben</h4>
             <p>
-              Wir, die FE Finance GmbH legt großen Wert auf Effizienz und kurze
+              {/* Wir, die FE Finance GmbH legt großen Wert auf Effizienz und kurze
               Wege. Um den Bewerbungsprozess für dich so angenehm wie möglich zu
               gestalten haben wir auf ein langes Bewerbungsformular verzichtet.
               Wir freuen uns auf deine Bewerbung und melden uns binnen 48h bei
+              dir. */}
+              Wir freuen uns auf deine Bewerbung und melden uns binnen 48h bei
               dir.
             </p>
-            <h6>So können wir dich erreichen</h6>
+            {/* <h6>So können wir dich erreichen</h6> */}
           </div>
           <div className="form-box-center-alignment">
             <div className="form-box">
@@ -183,8 +186,6 @@ console.log("inputValue",inputValue);
                     placeholder=" "
                     id="email"
                     name="email"
-
-
                     value={inputValue?.email}
                     onChange={(e) => {
                       handleOnChange(e);
@@ -198,7 +199,6 @@ console.log("inputValue",inputValue);
                   </span>
                 </div>
 
-               
                 <div class="floating-label">
                   <input
                     class="floating-input"
