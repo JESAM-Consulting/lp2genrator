@@ -121,11 +121,12 @@ export default function ForthStep(props) {
           </div>
           <div className="form-box-center-alignment">
             <div className="form-box">
-              <div class="floating-form">
-                <div class="floating-label">
+              <div className="floating-form">
+                <div className="floating-label">
                   <input
-                    class="floating-input"
+                    className="floating-input"
                     type="text"
+                    placeholder=" "
                     id="fname"
                     name="fname"
                     value={inputValue?.fname}
@@ -133,16 +134,16 @@ export default function ForthStep(props) {
                       handleOnChange(e);
                     }}
                   />
-                  <span class="highlight"></span>
+                  <span className="highlight"></span>
                   <label>Vorname</label>
                   <span style={{ color: "#d92c2c", fontSize: "12px" }}>
                     {errors?.fname}
                   </span>
                 </div>
 
-                <div class="floating-label">
+                <div className="floating-label">
                   <input
-                    class="floating-input"
+                    className="floating-input"
                     type="text"
                     placeholder=" "
                     id="lname"
@@ -152,16 +153,16 @@ export default function ForthStep(props) {
                       handleOnChange(e);
                     }}
                   />
-                  <span class="highlight"></span>
+                  <span className="highlight"></span>
                   <label>Nachname</label>
                   <span style={{ color: "#d92c2c", fontSize: "12px" }}>
                     {errors?.lname}
                   </span>
                 </div>
 
-                <div class="floating-label">
+                <div className="floating-label">
                   <input
-                    class="floating-input"
+                    className="floating-input"
                     type="text"
                     placeholder=" "
                     id="postalCode"
@@ -173,15 +174,15 @@ export default function ForthStep(props) {
                     }}
                     onKeyPress={bindInput}
                   />
-                  <span class="highlight"></span>
+                  <span className="highlight"></span>
                   <label>Postleitzahl</label>
                   <span style={{ color: "#d92c2c", fontSize: "12px" }}>
                     {errors?.postalCode}
                   </span>
                 </div>
-                <div class="floating-label">
+                <div className="floating-label">
                   <input
-                    class="floating-input"
+                    className="floating-input"
                     type="text"
                     placeholder=" "
                     id="email"
@@ -192,16 +193,16 @@ export default function ForthStep(props) {
                     }}
                     // onKeyPress={bindInput}
                   />
-                  <span class="highlight"></span>
+                  <span className="highlight"></span>
                   <label>E-mail</label>
                   <span style={{ color: "#d92c2c", fontSize: "12px" }}>
                     {errors?.email}
                   </span>
                 </div>
 
-                <div class="floating-label">
+                <div className="floating-label">
                   <input
-                    class="floating-input"
+                    className="floating-input"
                     type="text"
                     placeholder=" "
                     id="phone"
@@ -212,7 +213,7 @@ export default function ForthStep(props) {
                     }}
                     onKeyPress={bindInput}
                   />
-                  <span class="highlight"></span>
+                  <span className="highlight"></span>
                   <label>Telefon</label>
                   <span style={{ color: "#d92c2c", fontSize: "12px" }}>
                     {errors?.phone}

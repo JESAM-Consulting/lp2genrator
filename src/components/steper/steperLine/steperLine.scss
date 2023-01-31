@@ -66,16 +66,29 @@
           #D9D9D9;
           align-items: center;
           justify-content: center;
-          transform: translateY(-5.5px);
+          transform: translateY(-7px);
 
           .icon-design-active {
             background-color: #9dbc78;
-            width: 8px;
-            height: 8px;
+            width: 0.6rem;
+            height:0.6rem;
             border-radius: 50%;
+
+            &.now{
+              animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            }
           }
         }
       }
     }
   }
 }
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  }

@@ -21,7 +21,7 @@
     }
     img{
       @include breakpoint("max-sm") {
-        width: 3rem;
+        width: 3.5rem;
       }
     }
     p {
