@@ -20,7 +20,7 @@ export default function Steper() {
   return (
     <div>
       <div className="steper-all-content-alignment">
-        <div className="steper-container">
+        <div className="container-lg">
           <div className="first-content-alignment">
             <div>
               <NavLink to="/">
