@@ -8,7 +8,7 @@ export default function SteperLine(props) {
     <div>
       <div className="steper-line-all-contnet-alignment">
         <div className="step-container">
-          <div className="steper-alignmetn-page">
+          <div className="steper-alignment-page">
             <div className="steper-icon-text-design">
               <div className="icon-center-alignment">
                 {tabview === "first" ||
