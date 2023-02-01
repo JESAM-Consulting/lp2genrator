@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./steper.scss";
-import Logo from "../../assets/icons/new-logo.svg";
+
+import Logo from "../../assets/logo/logo.svg";
 import SteperLine from "./steperLine";
 import FirstStep from "./firstStep";
 import SecStep from "./secStep";
@@ -23,8 +24,8 @@ export default function Steper() {
           <div className="first-content-alignment">
             <div>
               <NavLink to="/">
-              <img src={Logo} alt="Logo" />
-            </NavLink>
+                <img src={Logo} alt="Logo" />
+              </NavLink>
             </div>
             <div>
               <p>
@@ -35,7 +36,7 @@ export default function Steper() {
         </div>
       </div>
       <div className="main-child-content-steper-page-alignment">
-        <SteperLine tabview={tabview}/>
+        <SteperLine tabview={tabview} />
         {tabview === "first" && (
           <FirstStep
             stepper={stepper}
@@ -65,9 +66,7 @@ export default function Steper() {
             setTabview={setTabview}
           />
         )}
-        {tabview === "fifth" && (
-         <VielenDank/>
-        )}
+        {tabview === "fifth" && <VielenDank />}
       </div>
       <div className="steper-footer">
         <span>Copyright © 2022 FE Finance. Alle Rechte vorbehalten.</span>

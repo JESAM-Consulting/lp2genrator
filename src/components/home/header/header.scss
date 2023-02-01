@@ -49,6 +49,13 @@
             align-items: center;
             cursor: pointer;
 
+            img{
+                width: 4rem;
+                @include breakpoint("max-sm") {
+                  width: 3.5rem;
+                }
+              }
+
             p {
                 font-weight: 800;
                 font-size: 16px;
