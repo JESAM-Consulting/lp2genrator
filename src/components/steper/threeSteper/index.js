@@ -1,7 +1,10 @@
 import React from "react";
 import "./threeSteper.scss";
+import { useHistory } from "react-router-dom";
+
 export default function ThreeSteper(props) {
   const { stepper, setStepper, setTabview } = props;
+  const history = useHistory();
 
   return (
     <div>
@@ -17,18 +20,18 @@ export default function ThreeSteper(props) {
                 <div>
                   <button
                     onClick={(e) => {
-                      setStepper({...stepper, ThirdStepper: "Berater" });
+                      setStepper({ ...stepper, ThirdStepper: "Berater" });
                       setTabview("forth");
-                    }}
-                  >
+                      history.push("/form");
+                    }}>
                     Berater
                   </button>
                   <button
                     onClick={(e) => {
-                      setStepper({...stepper, ThirdStepper: "Führungskraft" });
+                      setStepper({ ...stepper, ThirdStepper: "Führungskraft" });
                       setTabview("forth");
-                    }}
-                  >
+                      history.push("/form");
+                    }}>
                     Führungskraft
                   </button>
                 </div>

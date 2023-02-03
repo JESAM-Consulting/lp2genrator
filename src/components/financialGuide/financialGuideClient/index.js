@@ -19,17 +19,17 @@ export default function FinancialGuideClient() {
                 Finanzdienstleister
               </p>
               <div className="mobile-button-center-alignment">
-              <div className="button">
-              <NavLink to="/steper">
-                <button>
-                  Jetzt bewerben
-                  <br />
-                  <span className="new-buton-style-span">
-                    (ohne Lebenslauf in 30 Sek.)
-                  </span>
-                </button>
-                </NavLink>
-            </div>
+                <div className="button">
+                  <NavLink to="/steper1">
+                    <button>
+                      Jetzt bewerben
+                      <br />
+                      <span className="new-buton-style-span">
+                        (ohne Lebenslauf in 30 Sek.)
+                      </span>
+                    </button>
+                  </NavLink>
+                </div>
               </div>
             </div>
             <div className="grid-items">

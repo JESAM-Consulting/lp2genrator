@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./forthStep.scss";
 import { toast, ToastContainer } from "react-toastify";
-
+import { useHistory } from "react-router-dom";
 import { ApiGet, ApiPost, ApiPut } from "../../../helpers/API/ApiData";
 
 export default function ForthStep(props) {
   const { stepper, setStepper, setTabview } = props;
+  console.log("@#@#", stepper);
+  const history = useHistory();
+
   console.log(
     "====>",
     stepper.forthStepper,
@@ -95,6 +98,10 @@ export default function ForthStep(props) {
             "Vielen Dank, Ihre Daten wurden erfolgreich eingereicht."
           );
           setTabview("fifth");
+
+          setTimeout(() => {
+            history.push("/corfirmscreen");
+          }, 3000);
         })
         .catch((err) => {
           toast.error("Etwas ist schief gelaufen. Bitte versuche es erneut");
@@ -109,15 +116,9 @@ export default function ForthStep(props) {
           <div className="text-style">
             <h4>Jetzt bewerben</h4>
             <p>
-              {/* Wir, die FE Finance GmbH legt großen Wert auf Effizienz und kurze
-              Wege. Um den Bewerbungsprozess für dich so angenehm wie möglich zu
-              gestalten haben wir auf ein langes Bewerbungsformular verzichtet.
-              Wir freuen uns auf deine Bewerbung und melden uns binnen 48h bei
-              dir. */}
               Wir freuen uns auf deine Bewerbung und melden uns binnen 48h bei
               dir.
             </p>
-            {/* <h6>So können wir dich erreichen</h6> */}
           </div>
           <div className="form-box-center-alignment">
             <div className="form-box">
@@ -229,7 +230,7 @@ export default function ForthStep(props) {
                     id="new-check1"
                     onChange={(e) => setTerms(e.target.checked)}
                   />
-                  <label for="new-check1"></label>
+                  <label htmlFor="new-check1"></label>
                 </div>
                 <h5 style={{ margin: "0" }}>
                   Hiermit akzeptiere ich die Datenschutzbestimmungen der Energy
