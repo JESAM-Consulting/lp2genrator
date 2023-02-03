@@ -9,12 +9,7 @@ import FinancialGuide from "./components/financialGuide";
 import Cookies from "./components/cookies";
 import Steper from "./components/steper";
 
-function RouteWrapper({
-  component: Component,
-  layout: Layout,
-  auth,
-  ...rest
-}) {
+function RouteWrapper({ component: Component, layout: Layout, auth, ...rest }) {
   return (
     <Route
       {...rest}
@@ -46,13 +41,22 @@ function App() {
     <>
       <Router>
         {cookieModal && <Cookies onClose={onClose} />}
-        <RouteWrapper exact path="/" component={FinancialGuide} layout={DefaultLayoutMain}/>
-        <RouteWrapper exact path="/steper" component={Steper} layout={DefaultLayout} />
+        <RouteWrapper
+          exact
+          path="/"
+          component={FinancialGuide}
+          layout={DefaultLayoutMain}
+        />
+        <RouteWrapper
+          exact
+          path="/steper"
+          component={Steper}
+          layout={DefaultLayout}
+        />
       </Router>
     </>
   );
 }
-
 
 const DefaultLayout = ({ children, match }) => <>{children}</>;
 const DefaultLayoutMain = ({ children, match }) => (
@@ -60,7 +64,7 @@ const DefaultLayoutMain = ({ children, match }) => (
     <Header />
     {children}
     <Footer />
-    </>
+  </>
 );
 
 export default App;

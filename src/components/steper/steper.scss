@@ -2,9 +2,8 @@
 
 .steper-all-content-alignment {
   border: 1px solid #dadada;
-  padding: 24px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #dadada;
-
 
   .container-lg{
     @include breakpoint('max-sm'){
@@ -68,7 +67,7 @@
 }
 
 .main-child-content-steper-page-alignment {
-  min-height: calc(100vh - 155px);
+  min-height: calc(100vh - 180px);
   overflow: auto;
 
 }
