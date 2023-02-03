@@ -94,14 +94,14 @@ export default function ForthStep(props) {
       };
       ApiPost(`create-energy-steps`, data)
         .then((res) => {
-          toast.success(
-            "Vielen Dank, Ihre Daten wurden erfolgreich eingereicht."
-          );
+          // toast.success(
+          //   "Vielen Dank, Ihre Daten wurden erfolgreich eingereicht."
+          // );
           setTabview("fifth");
 
           setTimeout(() => {
             history.push("/corfirmscreen");
-          }, 3000);
+          }, 1000);
         })
         .catch((err) => {
           toast.error("Etwas ist schief gelaufen. Bitte versuche es erneut");
