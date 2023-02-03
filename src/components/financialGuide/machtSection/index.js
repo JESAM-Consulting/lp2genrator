@@ -28,13 +28,13 @@ export default function MachtSection() {
             </div>
             {/* onClick={() => setModalOpen(!modalOpen)} */}
             <div className="grid-items">
-              <NavLink to="/steper">
-              <button >
-                Jetzt bewerben <br />
-                <span className="new-buton-style-span">
-                  (ohne Lebenslauf in 30 Sek.)
-                </span>
-              </button>
+              <NavLink to="/steper1">
+                <button>
+                  Jetzt bewerben <br />
+                  <span className="new-buton-style-span">
+                    (ohne Lebenslauf in 30 Sek.)
+                  </span>
+                </button>
               </NavLink>
             </div>
           </div>

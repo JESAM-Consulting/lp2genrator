@@ -70,4 +70,8 @@
   min-height: calc(100vh - 180px);
   overflow: auto;
 
+  @include breakpoint('max-sm') {
+    min-height: calc(100vh - 160px);
+  }
+
 }

@@ -1,8 +1,11 @@
 import React from "react";
 import "./firstStep.scss";
+import { useHistory } from "react-router-dom";
+
 export default function FirstStep(props) {
   const { stepper, setStepper, setTabview } = props;
-  console.log("@#@#", stepper);
+  const history = useHistory();
+
   return (
     <div>
       <div className="first-step-all-content-alignment">
@@ -14,18 +17,18 @@ export default function FirstStep(props) {
               <div className="button-left-right-alignment">
                 <button
                   onClick={(e) => {
-                    setStepper({ ...stepper,firstStepper: "yes" });
+                    setStepper({ ...stepper, firstStepper: "yes" });
                     setTabview("second");
-                  }}
-                >
+                    history.push("/steper2");
+                  }}>
                   Ja
                 </button>
                 <button
                   onClick={(e) => {
-                    setStepper({...stepper, firstStepper: "no" });
+                    setStepper({ ...stepper, firstStepper: "no" });
                     setTabview("second");
-                  }}
-                >
+                    history.push("/steper2");
+                  }}>
                   Nein
                 </button>
               </div>
