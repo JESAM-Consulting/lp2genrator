@@ -20,10 +20,10 @@ export default function FinancialGuideWirSection() {
                 beruflicher und finanzieller Sicherheit gelangen.
               </p>
               <div className="button">
-              <NavLink to="/steper">
-              <button>Mehr zu FE Finance erfahren</button>
-              </NavLink>
-            </div>
+                <NavLink to="/steper1">
+                  <button>Mehr zu FE Finance erfahren</button>
+                </NavLink>
+              </div>
             </div>
           </div>
         </div>

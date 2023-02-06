@@ -5,12 +5,12 @@
   padding: 20px 0;
   border-bottom: 1px solid #dadada;
 
-
-  .steper-container{
+  .container-lg{
     @include breakpoint('max-sm'){
       padding: 0 20px;
     }
   }
+
   .first-content-alignment {
     display: flex;
     align-items: center;
@@ -67,7 +67,11 @@
 }
 
 .main-child-content-steper-page-alignment {
-  min-height: calc(100vh - 155px);
+  min-height: calc(100vh - 180px);
   overflow: auto;
+
+  @include breakpoint('max-sm') {
+    min-height: calc(100vh - 160px);
+  }
 
 }

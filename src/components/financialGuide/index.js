@@ -72,7 +72,7 @@ export default function FinancialGuide(props) {
                   <div className="text-style">
                     <p>Deine Karriere als Financial Guide starten</p>
                     {/* onClick={() => setModalOpen(true)} */}
-                    <NavLink to="/steper">
+                    <NavLink to="/steper1">
                       <div className="arrow-text-center-alignment">
                         <img src={RightIcon} alt="RightIcon" />
                         <span>
@@ -192,7 +192,7 @@ export default function FinancialGuide(props) {
               <div>
                 <img src={LgMobile} alt="LgMobile" />
               </div>
-              <NavLink to="/steper">
+              <NavLink to="/steper1">
                 <div>
                   <p>
                     Jetzt bewerben! <span>(ohne Lebenslauf in 30 Sek.)</span>

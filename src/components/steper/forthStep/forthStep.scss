@@ -4,11 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
    @include breakpoint('max-sm'){
     margin-bottom: 20px;
    }
+
   .forth-box {
     width: 451px;
+    margin-bottom: 27px;
 
     @include breakpoint("max-sm") {
       width: 100%;

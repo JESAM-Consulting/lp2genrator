@@ -1,7 +1,7 @@
 @import "../../../styles/mixins/global.scss";
 
 .steper-line-all-contnet-alignment {
-  .steper-alignmetn-page {
+  .steper-alignment-page {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,7 +18,8 @@
 
     &::before {
         width: calc(100% - 7%);
-        left: 3%;
+        left: 50%;
+        transform: translateX(-50%);
         top: 5px;
         content: "";
         background-color: #DADADA;
@@ -26,8 +27,8 @@
         height: 1px;
     
       @include breakpoint("max-sm") {
-        width: calc(100% - 13%);
-        left: 6%;
+        width: calc(100% - 53px);
+        
       }
       }
 
@@ -44,6 +45,7 @@
 
         @include breakpoint("max-sm") {
           font-size: 0.80rem;
+          min-width: 55px;
           line-height: 19px;
         }
       }
