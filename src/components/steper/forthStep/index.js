@@ -80,8 +80,8 @@ export default function ForthStep(props) {
     e.preventDefault();
     if (validateforUserData()) {
       const data = {
-        isSalesExperience: stepper.firstStepper,
-        isGradguate: stepper.secondStepper,
+        isSalesExperience: stepper?.firstStepper === "yes" ? true : false,
+        isGradguate: stepper?.secondStepper === "yes" ? true : false,
         perspective: stepper?.ThirdStepper,
         firstName: inputValue?.fname,
         lastName: inputValue?.lname,
